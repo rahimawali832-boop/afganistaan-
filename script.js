@@ -24,8 +24,8 @@ function toggleInfo(card) {
   card.classList.toggle('active');
 }
 window.addEventListener("load", () => {
- // const loader = document.getElementById("page-loader");
-  //const content = document.getElementById("page-content");
+  const loader = document.getElementById("page-loader");
+  const content = document.getElementById("page-content");
 
   setTimeout(() => {
     loader.style.opacity = "0";
@@ -37,7 +37,7 @@ window.addEventListener("load", () => {
       content.classList.add("visible");
     }, 600);
 
-  }, 2000); // 2-second simulated loading
+  }, 1000); // 2-second simulated loading
 });
 // Footer Reveal on Scroll
 const revealElements = document.querySelectorAll('.reveal');
